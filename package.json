@@ -4,7 +4,9 @@
   "description": "",
   "main": "moonboots-config.js",
   "dependencies": {
+    "ampersand-router": "^1.0.1",
     "ampersand-view": "^6.0.8",
+    "ampersand-view-switcher": "^1.0.2",
     "domready": "^1.0.5",
     "hapi": "^6.2.0",
     "moonboots_hapi": "^2.3.2"
