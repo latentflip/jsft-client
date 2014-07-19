@@ -4,10 +4,13 @@
   "description": "",
   "main": "moonboots-config.js",
   "dependencies": {
+    "ampersand-domthing-mixin": "^0.1.0",
     "ampersand-router": "^1.0.1",
     "ampersand-view": "^6.0.8",
     "ampersand-view-switcher": "^1.0.2",
     "domready": "^1.0.5",
+    "domthing": "^0.1.1",
+    "domthingify": "^0.1.1",
     "hapi": "^6.2.0",
     "moonboots_hapi": "^2.3.2"
   },
@@ -17,5 +20,8 @@
     "start": "node server.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "browserify": {
+    "transforms": ["domthingify"]
+  }
 }
