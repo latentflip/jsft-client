@@ -1,0 +1,17 @@
+{
+  "name": "wolves.technology-client",
+  "version": "0.0.0",
+  "description": "",
+  "main": "moonboots-config.js",
+  "dependencies": {
+    "hapi": "^6.2.0",
+    "moonboots_hapi": "^2.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
