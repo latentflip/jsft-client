@@ -35,6 +35,18 @@
         return '<nav class="pure-menu pure-menu-open pure-menu-horizontal"><a href="#" class="pure-menu-heading">Wolves.Technology</a><ul><li><a href="/">Den</a></li><li><a href="/howls">Howls</a></li><li><a href="/marks">Marks</a></li><li><a href="/wolves">Wolves</a></li></ul></nav>';
     };
 
+    // includes/wolf.jade compiled template
+    templatizer["includes"]["wolf"] = function tmpl_includes_wolf(locals) {
+        var buf = [];
+        var jade_mixins = {};
+        var jade_interp;
+        var locals_for_with = locals || {};
+        (function(model) {
+            buf.push("<div><p>" + jade.escape(null == (jade_interp = model.username) ? "" : jade_interp) + "</p></div>");
+        })("model" in locals_for_with ? locals_for_with.model : typeof model !== "undefined" ? model : undefined);
+        return buf.join("");
+    };
+
     // pages/den.jade compiled template
     templatizer["pages"]["den"] = function tmpl_pages_den() {
         return '<div><h1>Den</h1><div role="howls"></div></div>';
@@ -57,7 +69,7 @@
 
     // pages/wolves.jade compiled template
     templatizer["pages"]["wolves"] = function tmpl_pages_wolves() {
-        return "<div><h1>Wolves</h1></div>";
+        return '<div><h1>Wolves</h1><div role="wolves"></div></div>';
     };
 
     return templatizer;
