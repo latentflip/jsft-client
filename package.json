@@ -5,6 +5,8 @@
   "main": "moonboots-config.js",
   "dependencies": {
     "ampersand-dom": "^1.2.1",
+    "ampersand-model": "^3.0.4",
+    "ampersand-rest-collection": "^1.1.1",
     "ampersand-router": "^1.0.1",
     "ampersand-view": "^6.0.8",
     "ampersand-view-switcher": "^1.0.2",

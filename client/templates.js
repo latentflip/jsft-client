@@ -18,6 +18,18 @@
         return '<div><nav class="pure-menu pure-menu-open pure-menu-horizontal"><a href="#" class="pure-menu-heading">Wolves.Technology</a><ul><li><a href="/">Den</a></li><li><a href="/howls">Howls</a></li><li><a href="/marks">Marks</a></li><li><a href="/wolves">Wolves</a></li></ul></nav><div role="page"></div></div>';
     };
 
+    // includes/howl.jade compiled template
+    templatizer["includes"]["howl"] = function tmpl_includes_howl(locals) {
+        var buf = [];
+        var jade_mixins = {};
+        var jade_interp;
+        var locals_for_with = locals || {};
+        (function(model) {
+            buf.push("<div><p>" + jade.escape(null == (jade_interp = model.content) ? "" : jade_interp) + "</p></div>");
+        })("model" in locals_for_with ? locals_for_with.model : typeof model !== "undefined" ? model : undefined);
+        return buf.join("");
+    };
+
     // includes/main-nav.jade compiled template
     templatizer["includes"]["main-nav"] = function tmpl_includes_main_nav() {
         return '<nav class="pure-menu pure-menu-open pure-menu-horizontal"><a href="#" class="pure-menu-heading">Wolves.Technology</a><ul><li><a href="/">Den</a></li><li><a href="/howls">Howls</a></li><li><a href="/marks">Marks</a></li><li><a href="/wolves">Wolves</a></li></ul></nav>';
@@ -25,7 +37,7 @@
 
     // pages/den.jade compiled template
     templatizer["pages"]["den"] = function tmpl_pages_den() {
-        return "<div><h1>Den</h1></div>";
+        return '<div><h1>Den</h1><div role="howls"></div></div>';
     };
 
     // pages/fourOhFour.jade compiled template
