@@ -1,6 +1,7 @@
 var BasePage = require('./base');
+var templates = require('../templates');
 
 module.exports = BasePage.extend({
-    template: require('../templates/pages/howls.dom'),
+    template: templates.pages.howls,
     autoRender: true
 });
