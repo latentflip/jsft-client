@@ -14,7 +14,7 @@
 
     // pages/howls.jade compiled template
     templatizer["pages"]["howls"] = function tmpl_pages_howls() {
-        return "<div><h1>Howlss</h1></div>";
+        return "<div><h1>Howls</h1></div>";
     };
 
     return templatizer;
