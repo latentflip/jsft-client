@@ -1,5 +1,9 @@
 var Router = require('ampersand-router');
 var HowlsPage = require('./pages/howls');
+var WolvesPage = require('./pages/wolves');
+var DenPage = require('./pages/den');
+var MarksPage = require('./pages/marks');
+var FourOhFourPage = require('./pages/four-oh-four');
 
 function triggerPage(PageConstructor) {
     return function (params) {
@@ -9,15 +13,16 @@ function triggerPage(PageConstructor) {
 
 module.exports = Router.extend({
     routes: {
-        '': 'howls',
+        '': 'den',
         'howls': 'howls',
         'wolves': 'wolves',
         'marks': 'marks',
         '*default': '404'
     },
 
+    den: triggerPage(DenPage),
     howls: triggerPage(HowlsPage),
-    wolves: console.log.bind(console, 'wolves'),
-    marks: console.log.bind(console, 'marks'),
-    '404': console.log.bind(console, '404'),
+    marks: triggerPage(MarksPage),
+    wolves: triggerPage(WolvesPage),
+    '404': triggerPage(FourOhFourPage)
 });
