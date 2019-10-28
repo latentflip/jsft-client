@@ -12,7 +12,7 @@
     "ampersand-view-switcher": "^1.0.2",
     "domready": "^1.0.5",
     "getconfig": "^0.3.0",
-    "hapi": "^6.2.0",
+    "hapi": "^18.1.0",
     "moonboots_hapi": "^2.3.2",
     "stylizer": "^0.7.0",
     "templatizer": "^0.3.6"
